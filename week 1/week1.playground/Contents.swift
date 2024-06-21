@@ -9,7 +9,7 @@ import UIKit
  (2) git add + fileName or + .(add all of the changes at the current directory level)
  d. 
  (1) git reset - reset current HEAD to the specified state
- (2) default: --mixed
+ (2) default: --mixed(--soft.--hard). git reset --hard HEAD~: 回復到之前的版本
  e.
  (1) git commit - record changes to the repository
  (2) git commit -m allow us to provide the commit message on the command line rather than having to open an editor
@@ -22,9 +22,11 @@ import UIKit
  j.
  (1) git remote - manage set of tracked repositories
  (2) git remote -vv show all of the remotes that's currently set up.
- k. fork
- l. git rebase - reapply commits on top of another base tip
- m. 
+ k. fork - make a copy of an project that don’t have push access
+ l.
+ (1) git rebase - reapply commits on top of another base tip
+ (2) git rebase + branchName(被合併的)
+ m.
  (1) git cherry-pick - apply the changes introduced by some existing commits
  (2) git cherry-pick + commit_id
  n. git reflog - manage reflog information
@@ -35,8 +37,13 @@ import UIKit
 
 /* 3.
  1. 在GitHub上建立一個New repository
- 2. 用git init指令初始化repo
- 3. git remote add origin + GitHub的Repository HTTPS
+ 2. cd into project folder
+ 3. 用git init指令初始化repo
+ 4. git add .
+ 5. git commit -m "week1 commit"
+ 6. git branch -M main
+ 7. git remote add origin https://github.com/zaegp/Remote-Assignments.git
+ 8. git push -u origin main
 */
 //: Part 2
 /* 1.
